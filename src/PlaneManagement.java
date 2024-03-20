@@ -67,7 +67,7 @@ public class PlaneManagement {
 
     }
 
-    public static void userMenue() {
+    private static void userMenue() {
 
         // useds print statemetns to print the user menue in console
         System.out.println("\n*****************************************************************");
@@ -88,7 +88,7 @@ public class PlaneManagement {
 
     }
 
-    public static int userInputValidator(Scanner scan) {
+    private static int userInputValidator(Scanner scan) {
 
         // try : catch used to handle number format exeption and other possible erros
         try {
@@ -113,7 +113,7 @@ public class PlaneManagement {
         }
     }
 
-    public static void buySeat(Scanner scan, char[][] seatStructure) {
+    private static void buySeat(Scanner scan, char[][] seatStructure) {
 
         // user to enter the desired seat number
 
@@ -187,7 +187,7 @@ public class PlaneManagement {
 
     }
 
-    public static boolean isSeatAvailable(char[][] seatStructure, int row, int column) {
+    private static boolean isSeatAvailable(char[][] seatStructure, int row, int column) {
 
         // A simple if condition to check the availabiity of seats
         if (seatStructure[row][column] == '0') {
@@ -247,7 +247,7 @@ public class PlaneManagement {
      *
      * }
      */
-    public static void showSeatingPlane(char[][] seatStructure, Scanner scan) {
+    private static void showSeatingPlane(char[][] seatStructure, Scanner scan) {
         System.out.println("\n---------------------------------------------------\n");
         // to print the number of columns
         for (int i = 0; i < seatStructure[1].length; i++) {
