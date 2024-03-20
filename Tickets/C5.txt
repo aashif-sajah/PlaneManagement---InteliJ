@@ -1,9 +1,9 @@
 Ticket Information:
-Row: A
-Seat: 1
+Row: C
+Seat: 5
 Price: 200.0
 
 Passenger Information:
-Name: aaa
-Surname: aa
-Email: aa
+Name: aasd
+Surname: dsa
+Email: sa

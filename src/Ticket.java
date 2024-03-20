@@ -64,11 +64,13 @@ public class Ticket {
 
     public void save() {
         String baseDir = System.getProperty("user.dir");
+        //System.out.println(baseDir);
         String directoryPath = baseDir + File.separator + "Tickets";
+        //System.out.println(directoryPath);
         String fileName = String.format("%c%d.txt", (char) row, seat);
-        String filePath = directoryPath + fileName;
+        String filePath = directoryPath+File.separator+ fileName;
         try {
-            FileWriter writer = new FileWriter(filePath);
+            BufferedWriter writer = new BufferedWriter(new FileWriter(filePath));
             writer.write("Ticket Information:\n");
             writer.write("Row: " + (char) row + "\n");
             writer.write("Seat: " + seat + "\n");
