@@ -63,12 +63,12 @@ public class Ticket {
     }
 
     public void save() {
-        String directoryPath = "../Tickets/";
+        String baseDir = System.getProperty("user.dir");
+        String directoryPath = baseDir + File.separator + "Tickets";
         String fileName = String.format("%c%d.txt", (char) row, seat);
-        String filePath = directoryPath + fileName;
+        String filePath = directoryPath +File.separator+ fileName;
         try {
-            BufferedWriter writer = new BufferedWriter(new FileWriter(filePath));
-            //FileWriter writer = new FileWriter(filePath);
+            FileWriter writer = new FileWriter(filePath);
             writer.write("Ticket Information:\n");
             writer.write("Row: " + (char) row + "\n");
             writer.write("Seat: " + seat + "\n");

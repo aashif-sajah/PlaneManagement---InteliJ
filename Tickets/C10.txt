@@ -1,9 +1,0 @@
-Ticket Information:
-Row: C
-Seat: 10
-Price: 180.0
-
-Passenger Information:
-Name: Aa
-Surname: aa
-Email: aa
