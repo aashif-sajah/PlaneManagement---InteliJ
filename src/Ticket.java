@@ -64,11 +64,11 @@ public class Ticket {
 
     public void save() {
         String baseDir = System.getProperty("user.dir");
-        //System.out.println(baseDir);
+        // System.out.println(baseDir);
         String directoryPath = baseDir + File.separator + "Tickets";
-        //System.out.println(directoryPath);
+        // System.out.println(directoryPath);
         String fileName = String.format("%c%d.txt", (char) row, seat);
-        String filePath = directoryPath+File.separator+ fileName;
+        String filePath = directoryPath + File.separator + fileName;
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(filePath));
             writer.write("Ticket Information:\n");
@@ -80,7 +80,7 @@ public class Ticket {
             writer.write("Name: " + person.getName() + "\n");
             writer.write("Surname: " + person.getSureName() + "\n");
             writer.write("Email: " + person.getEmail() + "\n");
-            System.out.println("\nTicket Information Saved To " + fileName);
+            System.out.println("\tTicket Information Saved To " + fileName);
             writer.close();
         } catch (Exception e) {
             System.out.println("File does not Exist...");
