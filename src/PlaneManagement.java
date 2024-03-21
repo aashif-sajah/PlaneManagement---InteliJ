@@ -484,7 +484,7 @@ public class PlaneManagement {
             System.out.println("\tNo tickets sold during this session");
             System.out.println("---------------------------------------------------\n");
         } else {
-
+11aa
             for (int i = 0; i < tickets.length; i++) {
                 if (tickets[i] == null) {
                     break;
