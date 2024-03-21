@@ -30,7 +30,7 @@ public class PlaneManagement {
         switch (userInput) {
             case 0:
                 System.out.println("--------------------------------------------------------------");
-                System.out.println("/tThank you for using  Plane Management application");
+                System.out.println("\tThank you for using  Plane Management application");
                 System.out.println("--------------------------------------------------------------");
                 System.exit(0);
                 break;
