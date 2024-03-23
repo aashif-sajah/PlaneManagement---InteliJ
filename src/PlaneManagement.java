@@ -480,7 +480,7 @@ public class PlaneManagement {
 
         // looping through tickets array to get the available ticket prices
         if (tickets[0] == null) {
-            System.out.println("\t---------------------------------------------------");
+            System.out.println("\n---------------------------------------------------");
             System.out.println("\tNo tickets sold during this session");
             System.out.println("---------------------------------------------------\n");
         } else {
