@@ -6,4 +6,4 @@ Price: 200.0
 Passenger Information:
 Name: aa
 Surname: aa
-Email: aaa
+Email: aa

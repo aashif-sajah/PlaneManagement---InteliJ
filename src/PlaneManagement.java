@@ -72,7 +72,7 @@ public class PlaneManagement {
 
         // useds print statemetns to print the user menue in console
         System.out.println("\n*****************************************************************");
-        System.out.println("*\t\t\t\tMENUE\t\t\t\t*");
+        System.out.println("*\t\t\tMENU OPTIONS\t\t\t\t*");
         System.out.println("*****************************************************************\n");
         System.out.println("""
                         1) Buy a seat.
